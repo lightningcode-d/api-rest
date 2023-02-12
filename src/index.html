@@ -13,17 +13,39 @@
 </head>
 
 <body>
+
     <header>
         <h1>Random Cats</h1>
+
     </header>
+
     <section class="container">
+        <span id="error"></span>
         <div class="kittys">
-            <img id="img1" alt="Cat random Picture" class="image">
-            <img id="img2" alt="Cat random Picture" class="image">
-            <img id="img3" alt="Cat random Picture" class="image">
+            <article>
+                <img id="img1" alt="Cat random Picture" class="image">
+                <button id="btn1" onclick="saveFavouriteMichis()">Guardar en favoritos</button>
+            </article>
+
+            <article>
+                <img id="img2" alt="Cat random Picture" class="image">
+                <button id="btn2" onclick="saveFavouriteMichis()" >Guardar en favoritos</button>
+            </article>
+
+            <article>
+                <img id="img3" alt="Cat random Picture" class="image">
+                <button id="btn3" onclick="saveFavouriteMichis()" >Guardar en favoritos</button>
+            </article>
+
         </div>
         <button type="button" class="random-cat-button"> Show me a cat!</button>
     </section>
+
+    <section id="favoritesMichis" class="container">
+        <img id="img1" alt="Cat random Picture" class="image">
+        <button>Eliminar de favoritos</button>
+    </section>
+
     <script src="./main.js"></script>
 </body>
 
